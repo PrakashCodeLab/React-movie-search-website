@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,700;1,400&display=swap');
+
+
+// Variables
+
+$navbar-background-color: #343a40;
+$bg-primary-color: #F2F2F2;
+
+
+$black-color: #000000; // black
+$white-color: #ffffff; // white
+
+
+$heading-font-family: 'Bebas Neue', sans-serif; // font family for headings
+$text-font-family:'Poppins', sans-serif; // font family for paragraphs
+
+$border:1px solid red;
+
+
+
+@mixin radius($value){
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin flex-box($direction,$justify-content){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin grid-center{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+@mixin max-screen($size){
+     @media screen and (max-width:$size) {
+        @content;
+     }
+}
+
+
+
+

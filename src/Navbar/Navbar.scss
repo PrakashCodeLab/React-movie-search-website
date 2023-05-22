@@ -1,0 +1,88 @@
+@import '../assets/styles/style.scss';
+@import '../assets/styles/variables/variables';
+
+.navbar__container {
+    width: 100%;
+    background-color:$navbar-background-color; // Example background color #1A1A1A 
+
+   
+    display: grid;
+    place-items:center;
+    padding: 1.5rem 1rem;
+  }
+  
+  .navbar__wrapper__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px 16px;
+  }
+  
+  .navbar__header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__logo__left {
+    width: 30px; // Adjust as needed
+    height: 30px; // Adjust as needed
+    margin-right: 18px;
+    object-fit: contain;
+    @include radius(50%);
+    background-color: #FF9999;
+    vertical-align: middle;
+  }
+
+  .navbar__heading__left {
+    display: inline-block;
+    font-size: 28px;
+    background: -webkit-radial-gradient(#ff7b35 0%, #3c3c3c 100%) 63% 100%/101% 186%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $heading-font-family;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+  }
+  
+
+  
+  
+  
+  
+  .navbar__list__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar__search__group {
+    
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:$white-color;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    width: 200px;
+    height: 40px; // Adjust as needed
+  }
+  
+  .navbar__search__group::placeholder {
+    color: #999;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .search-icon{
+    position: absolute;
+    right: 15px;
+    color: black;
+    
+  }
+  
+  

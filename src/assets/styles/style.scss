@@ -1,0 +1,83 @@
+@import "./base/reset";
+@import "./variables/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+   min-height: 100vh;
+    scroll-behavior: smooth scroll;
+   }
+
+.body{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color:$bg-primary-color;
+}  
+
+.main{
+   
+    
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: first baseline;
+    align-items: center;
+    align-content: center;
+
+    @include max-screen(1100px){
+         justify-content: center;
+    }
+
+}  
+
+
+/* For Webkit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+  }
+  
+  /* For Firefox */
+  /* Note: Firefox provides limited support for scrollbar styling */
+  /* You can use the `scrollbar-color` property to set the colors */
+  /* Example: scrollbar-color: #888 #f1f1f1; */
+  
+
+.app__movies__notfound {
+   align-self: center;
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: none;
+    color:$black-color;
+     width: 100%;
+   &::first-letter{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+   }  
+}
+
+}
+
+
+   
