@@ -6,7 +6,7 @@ import Navbar from './Navbar/Navbar';
 const App = () => {
 
    const [movies, setMovies] = useState([]);
-   const API_URL=" http://www.omdbapi.com/?i=tt3896198&apikey=fab4a976";
+   const API_URL=" https://www.omdbapi.com/?i=tt3896198&apikey=fab4a976";
 
    const GetMovies=async(title)=>{
 
